@@ -1,4 +1,4 @@
-#-*-coding:UTF-8 -*-
+﻿#-*-coding:UTF-8 -*-
 # 範例程式 EX02_04.py
 #
 # 計算BMI並輸出分級值
