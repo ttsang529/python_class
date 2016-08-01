@@ -5,7 +5,11 @@
 #  傳入多個成員資訊 姓名(數量可以動態增減)當引數
 #  對每個成員打招呼
 
+#def hello(*names):
 def hello(*names):
     for n in names: print("Hello, %s."%n)
 
+
+#a="Tom","Peter","Bob","Rain"
 hello("Tom","Peter","Bob","Rain")
+#hello("Tom","Peter","Bob","Rain")

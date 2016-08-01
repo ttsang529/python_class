@@ -1,10 +1,20 @@
 class Demo:
-	__x = 0
+	#__x = 0
 	def __init__(self, i):
 		self.i = i
-		Demo.__x += 1
+		#print(self.i)
+		#Demo.__x += 1
 
 	def hello(self):
-		print("hello", self.i)
-a = Demo("Tom")
-print(a.__x)
+		print("hello")
+
+
+
+
+
+a = Demo("AAA")
+print(a.hello())
+b = Demo("Tom")
+print(b.hello())
+c = Demo("CCC")
+print(c.hello())
