@@ -1,5 +1,5 @@
 class Demo:
-	#__x = 0
+    	#__x = 0
 	def __init__(self, i):
 		self.i = i
 		#print(self.i)

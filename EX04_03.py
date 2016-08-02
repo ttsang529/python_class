@@ -12,4 +12,4 @@ def hello(*names):
 
 #a="Tom","Peter","Bob","Rain"
 hello("Tom","Peter","Bob","Rain")
-#hello("Tom","Peter","Bob","Rain")
+

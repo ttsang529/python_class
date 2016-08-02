@@ -3,6 +3,7 @@ class Demo:
 	def __init__(self, i):
 		self.__i = i
 		Demo.__x += 1
+		print(str(self.__i)+"  and   "+str(Demo.__x))
 	def hello(self):
 		print("hello", self.__i)
 	@classmethod
