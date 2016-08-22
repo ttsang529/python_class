@@ -18,8 +18,10 @@ class myparser(HTMLParser):
         self.numbers = []
 
     def handle_data(self, data):
-        if self.isNumber == 1:
-            self.numbers.append(data)
+        if self.isNumber == 1 and self.getpos()[1]<4000:
+            #print(data,"pos:",self.getpos())
+            #self.numbers.append(data)
+            self.numbers.extend(data.split('、'))
             self.isNumber = 0
 
     def handle_starttag(self, tag, attrs):

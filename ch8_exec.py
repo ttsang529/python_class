@@ -11,12 +11,13 @@ class FileExec:
             print(*random.sample(range(1,1001,2),100),file=open(filepath,'a'))
             ctime= os.path.getctime('random.txt')
             mtime= os.path.getmtime('random.txt')
-            print(time.strftime('%Y-%m-%d %H:%M:%S'),time.localtime(ctime),file=open(filepath,'a'))
-            print(time.strftime('%Y-%m-%d %H:%M:%S'),time.localtime(mtime),file=open(filepath,'a'))   
-            local=os.getcwd() 
-
-            os.mkdir(local+'/test')
-            shutil.move('random.txt','.\\test\\random.txt')
+            print(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(ctime)),file=open(filepath,'a'))
+            print(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(mtime)),file=open(filepath,'a'))   
+            local=os.getcwd()+'/test/' 
+            
+            os.mkdir(local)
+            localfile=local+'random.txt'
+            shutil.move('random.txt',os.mkdir(local+'/test/')+'random.txt')
 
 
 if __name__ == '__main__':
